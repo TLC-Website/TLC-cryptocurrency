@@ -57,3 +57,6 @@ User authentication system
 Enhanced visual design and animations
 
 ## About the Project
+
+TLC — The Loin Coin — was created as a creative and educational project to understand cryptocurrency logic, user interface design, and full-stack web development.
+The website is a fictional simulation meant for learning and demonstration purposes only.
