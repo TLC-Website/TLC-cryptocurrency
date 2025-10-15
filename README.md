@@ -45,10 +45,10 @@ Project Info Section — Explains how TLC was built and the technologies behind 
 Responsive Design — Optimized for different screen sizes.
 
 ## Project Structure
-<img width="916" height="429" alt="image" src="https://github.com/user-attachments/assets/063688ae-85b7-4bc1-8094-258d26e6440a" />
+<img width="936" height="406" alt="image" src="https://github.com/user-attachments/assets/7c85799f-4087-4d48-83c9-d3f2549853ee" />
 
 ## Sketch
-<img width="991" height="1280" alt="image" src="https://github.com/user-attachments/assets/9e060701-eca4-4af9-b9c3-ad9a6db74fcb" />
+<img width="991" height="1280" alt="image" src="https://github.com/user-attachments/assets/e7d1631d-9166-4b30-9414-1b55e7280d48" />
 
 ## Future Improvements
 
