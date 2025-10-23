@@ -13,13 +13,19 @@
       <div class="contact-left">
         <h2>Get Started with TLC</h2>
         <p>Join our crypto ecosystem — create an account</p>
-        <button class="contact-btn">Join Now</button>
+        <form action="{% url 'singup' %}" method="post">
+          {% csrf_token %}
+          <button type="submit" class="contact-btn">Join Now</button>
+        </form>
       </div>
 
       <div class="contact-right">
         <div class="contact-item">
           <div class="contact-info">
-            <button class="contact-btn">
+            <form action="{% url 'singup' %}" method="post">
+              {% csrf_token %}
+              <button type="submit" class="contact-btn">
+            </form>
               <h3>Sign Up</h3>
               <p>Create your TLC account</p>
             </button>
@@ -28,7 +34,10 @@
 
         <div class="contact-item">
           <div class="contact-info">
-            <button class="contact-btn">
+            <form action="{% url 'singin' %}" method="post">
+              {% csrf_token %}
+              <button class="contact-btn">
+            </form>
               <h3>Sign In</h3>
               <p>Access your account</p>
             </button>
@@ -47,10 +56,9 @@
         </div>
       </div>
     </div>
-
-    <p>Test commit</p>
   </section>
 
   <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
+  <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
