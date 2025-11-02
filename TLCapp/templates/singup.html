@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TLC — Sign Up</title>
+  <title>TLC-Sign Up</title>
   <link rel="stylesheet" href="{% static 'css/singup_in.css' %}" />
 </head>
 <body>
@@ -12,15 +12,23 @@
     <h1>Create Your TLC Account</h1>
     <p class="subtitle">Join our crypto ecosystem — it only takes a minute.</p>
 
-    <form class="signup_in-form">
+    {% if messages %}
+      {% for message in messages %}
+        <p style="color:red;">{{ message }}</p>
+      {% endfor %}
+    {% endif %}
+
+    <form class="signup_in-form" action="" method="post">
+      {% csrf_token %}
       <div class="form-group">
         <label for="username">Username</label>
-        <input id="username" type="text" placeholder="Enter username" required />
+        <input id="username" name="username" type="text" placeholder="Enter username" required />
       </div>
+    
 
       <div class="form-group">
         <label for="password">Password</label>
-        <input id="password" type="password" placeholder="Create a password" required />
+        <input id="password" name="password" type="password" placeholder="Create a password" required />
       </div>
 
       <button type="submit" class="btn-gradient">Sign Up</button>
@@ -33,5 +41,7 @@
   </div>
 
   <footer>© 2025 TLC. All rights reserved.</footer>
+
+
 </body>
 </html>
