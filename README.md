@@ -1,4 +1,8 @@
 # TLC
+### Collaboration Note:
+All changes, updates, and improvements to this project are made together during personal meetings or online calls via Microsoft Teams.
+This means that every part of the development — including code, design, documentation, and updates — is the result of equal collaboration (50/50 work) between both project creators.
+It does not matter who commits or uploads the changes; all work is done jointly.
 
 ## TLC — The Loin Coin
 
