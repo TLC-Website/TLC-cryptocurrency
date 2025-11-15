@@ -12,36 +12,19 @@
     <h1>Create Your TLC Account</h1>
     <p class="subtitle">Join our crypto ecosystem — it only takes a minute.</p>
 
-    {% if messages %}
-      {% for message in messages %}
-        <p style="color:red;">{{ message }}</p>
-      {% endfor %}
-    {% endif %}
 
     <form class="signup_in-form" action="" method="post">
       {% csrf_token %}
-
-      {% if messages %}
-        {% for message in messages %}
-          <p style="color:red;">{{ message }}</p>
-        {% endfor %}
-      {% endif %}
 
       <div class="form-group">
         <label for="username">Username</label>
         <input id="username" name="username" type="text" placeholder="Enter username"
               value="{{ form.username.value|default_if_none:'' }}" required />
-        {% if form.username.errors %}
-          <p style="color:red;">{{ form.username.errors.0 }}</p>
-        {% endif %}
       </div>
 
       <div class="form-group">
         <label for="password">Password</label>
         <input id="password" name="password" type="password" placeholder="Create a password" required />
-        {% if form.password.errors %}
-          <p style="color:red;">{{ form.password.errors.0 }}</p>
-        {% endif %}
       </div>
 
       <button type="submit" class="btn-gradient">Sign Up</button>

@@ -12,15 +12,17 @@
     <h1>Welcome Back to TLC</h1>
     <p class="subtitle">Access your account and continue your journey.</p>
 
-    <form class="signup_in-form">
+    <form class="signup_in-form" method="post">
+    {% csrf_token %}
+  
       <div class="form-group">
-        <label for="username">Username</label>
-        <input id="username_singin" type="text" placeholder="Enter username" required />
+      {{ form.username.label_tag }}
+      {{ form.username }}
       </div>
 
       <div class="form-group">
-        <label for="password">Password</label>
-        <input id="password_singin" type="password" placeholder="Enter your password" required />
+        {{ form.password.label_tag }}
+        {{ form.password }}
       </div>
 
       <button type="submit" class="btn-gradient">Sign In</button>
