@@ -1,8 +1,4 @@
 # TLC
-### Collaboration Note:
-All changes, updates, and improvements to this project are made together during personal meetings or online calls via Microsoft Teams.
-This means that every part of the development — including code, design, documentation, and updates — is the result of equal collaboration (50/50 work) between both project creators.
-It does not matter who commits or uploads the changes; all work is done jointly.
 
 ## TLC — The Loin Coin
 
@@ -49,54 +45,10 @@ Project Info Section — Explains how TLC was built and the technologies behind 
 Responsive Design — Optimized for different screen sizes.
 
 ## Project Structure
-### 📂 Project Structure
-
-```text
-TLC-CRYPTOCURRENCY/
-│
-├── Design_elements/                # Design assets and visual elements
-│   ├── TLC_animation.mp4           # Animation for presentation/demo
-│   └── TLC_design.png              # UI design reference
-│
-├── env/                            # Virtual environment (excluded from version control)
-│
-├── TLCapp/                         # Main Django application
-│   ├── migrations/                 # Database migration files
-│   ├── static/                     # Static files (CSS, JS)
-│   │   └── css/                    # Styling for frontend pages
-│   │       ├── home.css
-│   │       ├── main.css
-│   │       └── singup_in.css
-│   ├── templates/                  # HTML templates for the app
-│   │   ├── home.html
-│   │   ├── main.html
-│   │   ├── singin.html
-│   │   └── singup.html
-│   ├── __init__.py                 # Marks the folder as a Python package
-│   ├── admin.py                    # Django admin panel configuration
-│   ├── apps.py                     # Application configuration
-│   ├── forms.py                    # User forms (login, signup)
-│   ├── models.py                   # Database models (User, Wallet, Transaction)
-│   ├── tests.py                    # Unit and integration tests
-│   ├── urls.py                     # URL routing for the app
-│   └── views.py                    # View logic and request handling
-│
-├── TLCproject/                     # Django project configuration
-│   ├── __init__.py
-│   ├── asgi.py                     # ASGI entry point (async support)
-│   ├── settings.py                 # Global Django settings
-│   ├── urls.py                     # Root project URLs
-│   └── wsgi.py                     # WSGI entry point (deployment)
-│
-├── db.sqlite3                      # Local SQLite database
-├── manage.py                       # Django management script (runserver, migrate, etc.)
-├── LICENSE                         # Project license information
-└── README.md                       # Project documentation
-
-```
+<img width="936" height="406" alt="image" src="https://github.com/user-attachments/assets/7c85799f-4087-4d48-83c9-d3f2549853ee" />
 
 ## Sketch
-<img width="600" height="800" alt="image" src="https://github.com/user-attachments/assets/e7d1631d-9166-4b30-9414-1b55e7280d48" />
+<img width="991" height="1280" alt="image" src="https://github.com/user-attachments/assets/e7d1631d-9166-4b30-9414-1b55e7280d48" />
 
 ## Future Improvements
 
