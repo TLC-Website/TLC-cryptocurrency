@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TLC-Start</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-left">
+        <h2>Get Started with TLC</h2>
+        <p>Join our crypto ecosystem — create an account</p>
+        <form action="{% url 'singup' %}" method="post">
+          {% csrf_token %}
+          <button type="submit" class="contact-btn">Join Now</button>
+        </form>
+      </div>
+
+      <div class="contact-right">
+        <div class="contact-item">
+          <div class="contact-info">
+            <form action="{% url 'singup' %}" method="post">
+              {% csrf_token %}
+              <button type="submit" class="contact-btn">
+            </form>
+              <h3>Sign Up</h3>
+              <p>Create your TLC account</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-info">
+            <form action="{% url 'singin' %}" method="post">
+              {% csrf_token %}
+              <button class="contact-btn">
+            </form>
+              <h3>Sign In</h3>
+              <p>Access your account</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-info">
+            <a href="https://github.com/TLC-Website/TLC-cryptocurrency" 
+           class="contact-item" target="_blank">
+              <button class="contact-btn">
+                <h3>GitHub Repository</h3>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
