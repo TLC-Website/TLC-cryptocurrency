@@ -3,6 +3,9 @@ from django.contrib.auth.models import User
 from django.contrib.auth import login
 from .forms import RegisterForm, LoginForm
 from django.contrib.auth import authenticate, login
+from django.contrib.auth import login
+from .forms import RegisterForm, LoginForm
+from django.contrib.auth import authenticate, login
 
 def home(request):
     return render(request,"home.html")
@@ -12,7 +15,9 @@ def singup(request):
 
     if request.method == "POST":
 
+
         form = RegisterForm(request.POST)
+
 
         if form.is_valid():
 
@@ -20,7 +25,11 @@ def singup(request):
             user.set_password(form.cleaned_data["password"])
             user.save()
 
+
             login(request, user)
+
+            print("User registered:", user)
+
 
             print("User registered:", user)
 
@@ -28,6 +37,8 @@ def singup(request):
             
 
         else:
+            return render(request, "singup.html", {"form": form})
+        
             return render(request, "singup.html", {"form": form})
         
     else:

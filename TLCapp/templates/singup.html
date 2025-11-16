@@ -12,6 +12,12 @@
     <h1>Create Your TLC Account</h1>
     <p class="subtitle">Join our crypto ecosystem — it only takes a minute.</p>
 
+    {% if messages %}
+      {% for message in messages %}
+        <p style="color:red;">{{ message }}</p>
+      {% endfor %}
+    {% endif %}
+
     <form class="signup_in-form" action="" method="post">
       {% csrf_token %}
 

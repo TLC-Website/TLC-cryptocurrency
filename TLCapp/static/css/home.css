@@ -91,3 +91,21 @@ body {
 .contact-info a:hover {
   color: #ff6b3d;
 }
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+  }
+  #video-container {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+  }
+  #video-container video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
