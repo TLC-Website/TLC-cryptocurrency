@@ -41,8 +41,8 @@ body {
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
-  width: 260px; /* одинаковая длина для всех кнопок */
-  text-align: center; /* чтобы текст был по центру */
+  width: 260px; 
+  text-align: center;
 }
 
 
