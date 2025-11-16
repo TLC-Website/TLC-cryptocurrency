@@ -7,7 +7,7 @@ from django.contrib import messages
 def home(request):
     return render(request,"home.html")
 
-
+# test
 def singup(request):
 
     if request.method == "POST":
