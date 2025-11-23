@@ -10,7 +10,6 @@ from django.contrib.auth import authenticate, login
 def home(request):
     return render(request,"home.html")
 
-# test
 def singup(request):
 
     if request.method == "POST":
@@ -67,6 +66,4 @@ def signin(request):
 
 
 def main(request):
-    return render(request,"main.html")
-
-    # test
+    return render(request,"main_page.html")
