@@ -2,12 +2,30 @@
 <html lang="en">
 {% load static %}
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TLC-Main</title>
-    <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TLC-Start</title>
+  <link rel="stylesheet" href="{% static 'css/main_style.css' %}">
 </head>
 <body>
-    <img src="{% static 'Design_elements/TLC_design.2.png' %}" alt="TLC_design picture error">
+    <div id="balance-line">
+      <div id="balance">
+        <h1 id="balance-text">Balance:</h1>
+        <h1 id="balance-num">3600000000000000</h1>
+        <h1>$</h1>
+      </div>
+
+      <div id="profil_div">
+        <img id="profil-icon" src="{% static 'Design_elements/profile_image.png' %}" alt="picture error">
+
+        {% if user.is_authenticated %}
+          <h1 id="username">{{ user.username }}</h1>
+        {% endif %}
+
+      </div>
+    </div>
+    <div>
+      <img src="{% static 'Design_elements/TLC_design.2.png' %}" alt="TLC_design picture error" width="200px">
+    </div>
 </body>
 </html>

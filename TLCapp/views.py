@@ -38,13 +38,12 @@ def singup(request):
         else:
             return render(request, "singup.html", {"form": form})
         
-            return render(request, "singup.html", {"form": form})
-        
+            
     else:
         form = RegisterForm()
 
 
-    return render(request,"singup.html", {"form": form})
+    return render(request,"singup.html", {"form": form},  {"user": request.user})
 
 def signin(request):
     if request.method == "POST":

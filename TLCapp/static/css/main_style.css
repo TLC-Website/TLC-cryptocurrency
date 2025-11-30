@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0c0f1d;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#balance-line {
+  height: 10vh;
+  width: 100vw;
+  background-color: #cb782a;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #0c0f1d;
+}
+
+#balance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#balance-text {
+  margin-top: 0px;
+  margin-bottom: -15px;
+  
+}
+
+#profil_div {
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#profil-icon {
+  width: 80px; 
+  height: 10vh;
+}
+
+#username {
+  width: 10%; 
+  margin-right: 10px;
+}
